@@ -134,3 +134,29 @@
     }
   }
 }
+
+.sign-in-after{
+  display: inline-block;
+  float:right;
+  }
+  .header-user-nav__acount {
+    display: inline-block;
+    width: 140px;
+    img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 8px 10px -10px;
+  }
+}
+  .header-user-nav__notice {
+    display: inline-block;
+    width: 83px;
+  }
+    .header-user-nav__todo {
+      display: inline-block;
+      width: 120px;
+    }
+
+
+
