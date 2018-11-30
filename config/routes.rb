@@ -9,7 +9,6 @@ Rails.application.routes.draw do
     get 'signup/registration', to: 'users/registrations#new', as: :new_user_registration
     post 'signup/registration', to: 'users/registrations#create'
     delete 'signup', to: 'users/sessions#destroy', as: :destroy_session
-    get 'signup/complete', to: 'devise/registrations#complete', as: :new_user_complete
   end
 
   resources :registrations
