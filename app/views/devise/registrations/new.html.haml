@@ -45,5 +45,5 @@
             = f.password_field :password_confirmation, placeholder: "6文字以上", autocomplete: "new-password", class: "input-default"
           .form-group__input
             .g-recaptcha{"data-sitekey": "6LeK9HkUAAAAAL8mLfKNdK_vo7oKQN0joY0w_74e", "data-callback": "validateRecaptcha"}
-            = f.submit :次へ進む, class: "button next-submit btn-default", disabled: "disabled"
+            = f.submit :次へ進む, class: "button next-submit btn-default"
 = render 'shared/login_footer'
