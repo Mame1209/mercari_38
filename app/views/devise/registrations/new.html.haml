@@ -24,7 +24,7 @@
     .m-single-container
       .l-single-title 会員情報入力
       .registration-form-inner
-      = form_for(resource, as: resource_name, url: new_user_registration_path) do |f|
+      = form_for(resource, as: resource_name, url: signup_registration_path) do |f|
         = devise_error_messages!
         .s-single-container
           .form-group__input
