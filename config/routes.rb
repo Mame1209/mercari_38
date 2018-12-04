@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users, skip: :all
   devise_scope :user do
     get 'login', to: 'users/sessions#new', as: :new_user_session
+    post 'login', to: 'users/sessions#create'
     delete 'signup', to: 'users/sessions#destroy', as: :destroy_session
     get 'signup/registration', to: 'users/registrations#new', as: :new_user_registration
     post 'signup/registration', to: 'users/registrations#create'
